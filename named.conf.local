@@ -1,0 +1,9 @@
+zone "binarybutter.com" {
+type master;
+file "/etc/bind/zones/binarybutter.com.db";
+};
+
+zone "3.2.1.in-addr.arpa" {
+type master;
+file "/etc/bind/zones/rev.3.2.1.in-addr.arpa";
+};

@@ -1,0 +1,9 @@
+@ IN SOA binarybutter.com. host.binarybutter.com. (
+2010081401;
+28800;
+604800;
+604800;
+86400 );
+
+IN NS ns1.binarybutter.com.
+4 IN PTR binarybutter.com.
