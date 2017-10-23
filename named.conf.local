@@ -1,9 +1,17 @@
 zone "binarybutter.com" {
-type master;
-file "/etc/bind/zones/binarybutter.com.db";
+  type master;
+  file "/etc/bind/zones/binarybutter.com.db";
+  allow-update {
+    key "binarybutter.com.";
+  };
 };
 
 zone "3.2.1.in-addr.arpa" {
-type master;
-file "/etc/bind/zones/rev.3.2.1.in-addr.arpa";
+  type master;
+  file "/etc/bind/zones/rev.3.2.1.in-addr.arpa";
+};
+
+key "binarybutter.com." {
+  algorithm hmac-md5;
+  secret "MgfTV1MDUBzM6gqtp4zEZOSN0+PauekQelJB7iAY+RHjYXATDZJMrzu9lp1gG2z+Ko0rJoOpYYJzvYbLcyUaLg==";
 };
